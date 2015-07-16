@@ -2,7 +2,7 @@
 
 ### A better credit card form now also as a react component
 
-[Card](http://github.com/jessepollak/card) makes credit card forms look and behave great. Everything is created with pure CSS, HTML, and Javascript — no images required.
+[Card](http://github.com/jessepollak/card) makes credit card forms look and behave amazing. Everything is created with pure CSS, HTML, and Javascript — no images required.
 
 ![card](http://i.imgur.com/qG3TenO.gif)
 
@@ -14,7 +14,7 @@ To use, you'll need to include the Card.js and card.css files into your project.
 ReactCardFormContainer = require('card-react')
 ```
 
-Once you've included those files, you can initialize Card.
+Once you've included those files, you can initialize react-card. you'll need to make the component the container of your form:
 
 ```jsx
 
@@ -59,7 +59,7 @@ Once you've included those files, you can initialize Card.
 
 ### Installing card-react from npm
 
-If you're using npm, you can install card.js with:
+If you're using npm, you can installreact-card with:
 
   npm install card-react
 
@@ -76,5 +76,5 @@ If you're using npm, you can install card.js with:
   - Navigate to http://localhost:8000/
   - Run grunt build after you make the changes
 
-your more than welcome to contribute!
+your more than welcome to contribute. Enjoy!
 
