@@ -5,4 +5,4 @@ module.exports = ->
     server:
       options:
         port: 8000,
-        base: ['./.tmp', './', './example']
+        base: ['./', './.tmp', './example', './lib']

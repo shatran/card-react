@@ -1,5 +1,5 @@
 React = require 'react'
-ReactCardFormContainer = require '../src/coffee/card-react-form-container.cjsx'
+ReactCardFormContainer = require '../lib/card-react-form-container.js'
 
 CardLoader = React.createClass
 

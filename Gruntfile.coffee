@@ -9,11 +9,11 @@ module.exports = (grunt) ->
   @initConfig
     config: config
   # Load task configurations.
-  @loadTasks "grunt/tasks"
+  @loadTasks "grunt-tasks"
 
   @registerTask "build", [
     "clean"
-    "browserify:prod"
+    "cjsx"
     "compass"
     "cssmin"
     "clean:build"
@@ -21,6 +21,7 @@ module.exports = (grunt) ->
 
   @registerTask "default", [
     "clean"
+    "cjsx"
     "browserify:dev"
     "compass"
     "connect"
