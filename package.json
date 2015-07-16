@@ -1,6 +1,6 @@
 {
   "name": "card-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component for card https://github.com/jessepollak/card",
   "main": "dist/card.js",
   "dependencies": {},
@@ -33,7 +33,11 @@
     "url": "https://github.com/shatran/card-react.git"
   },
   "keywords": [
-    "card-react", "credit", "card", "react", "component"
+    "card-react",
+    "credit",
+    "card",
+    "react",
+    "component"
   ],
   "author": "Shay Stern",
   "license": "MIT",
