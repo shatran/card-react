@@ -1,8 +1,8 @@
 {
   "name": "card-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React component for card https://github.com/jessepollak/card",
-  "main": "dist/card.js",
+  "main": "lib/card-react-form-container.js",
   "dependencies": {
     "payment": "0.0.7",
     "classnames": "^2.1.2"

@@ -7,5 +7,5 @@ module.exports = ->
         expand: true
         cwd: '<%= config.tmp %>'
         src: ['**/*.css', '!**/*.min.css']
-        dest: '<%= config.dist %>'
+        dest: '<%= config.lib %>'
       ]

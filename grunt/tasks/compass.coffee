@@ -2,7 +2,7 @@ module.exports = ->
   @loadNpmTasks "grunt-contrib-compass"
 
   @config "compass",
-    dist:
+    lib:
       options:
         sassDir: '<%= config.src %>/scss'
         cssDir: '<%= config.tmp %>/'

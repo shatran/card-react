@@ -7,14 +7,15 @@ ReactCard = React.createClass
   displayName: "ReactCard"
 
   getDefaultProps: ->
-    initialNumber: '•••• •••• •••• ••••'
-    initialCvc: '•••'
-    initialExpiry: '••/••'
-    initialName: 'Full Name'
     messages:
       validDate: 'valid\nthru'
       monthYear: 'month/year'
     baseWidth: 350
+    defaultValues:
+      number: '•••• •••• •••• ••••'
+      cvc: '•••'
+      expiry: '••/••'
+      name: 'Full Name'
 
   componentWillMount: ->
     # add special styling according to specific browser
@@ -71,7 +72,7 @@ ReactCard = React.createClass
     if expiryValue
       expiryValue = expiryValue.replace(/\s+/g, '')
     else
-      expiryValue = @props.initialExpiry
+      expiryValue = @props.defaultValues.expiry
 
     return (
       <div className="jp-card-container" style={containerStyle}>
@@ -86,13 +87,13 @@ ReactCard = React.createClass
             <div className="jp-card-lower">
               <div className="jp-card-shiny"></div>
               <div className={ClassNames("jp-card-cvc", "jp-card-display", "jp-card-focused": @_isFocusedInput("cvc"), @_getInputValidationState("cvc"))}>
-                {@props.inputsValues[@props.formInputsNames["cvc"]] or @props.initialCvc}
+                {@props.inputsValues[@props.formInputsNames["cvc"]] or @props.defaultValues.cvc}
               </div>
               <div className={ClassNames("jp-card-number", "jp-card-display", "jp-card-focused": @_isFocusedInput("number"), @_getInputValidationState("number"))}>
-                {@props.inputsValues[@props.formInputsNames["number"]] or @props.initialNumber}
+                {@props.inputsValues[@props.formInputsNames["number"]] or @props.defaultValues.number}
               </div>
               <div className={ClassNames("jp-card-name", "jp-card-display", "jp-card-focused": @_isFocusedInput("name"), @_getInputValidationState("name"))}>
-                {@props.inputsValues[@props.formInputsNames["name"]] or @props.initialName}
+                {@props.inputsValues[@props.formInputsNames["name"]] or @props.defaultValues.name}
               </div>
               <div className={ClassNames("jp-card-expiry", "jp-card-display", "jp-card-focused": @_isFocusedInput("expiry"), @_getInputValidationState("expiry"))}
                    data-before={@props.messages.monthYear}
@@ -104,7 +105,7 @@ ReactCard = React.createClass
           <div className="jp-card-back">
             <div className="jp-card-bar"></div>
             <div className={ClassNames("jp-card-cvc", "jp-card-display", "jp-card-focused": @_isFocusedInput("cvc"), @_getInputValidationState("cvc"))}>
-              {@props.inputsValues[@props.formInputsNames["cvc"]] or @props.initialCvc}
+              {@props.inputsValues[@props.formInputsNames["cvc"]] or @props.defaultValues.cvc}
             </div>
             <div className="jp-card-shiny"></div>
           </div>

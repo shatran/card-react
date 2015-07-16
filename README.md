@@ -14,15 +14,20 @@
   - Init the card element with any values
   - The card element itself don't have to be a child of the form - it can be rendered anywhere
 
+### How to install
+
+ - `npm install card-react`
+ - Add `card.css` file to your project's stylesheets. You can find it at `lib/` folder.
+
 ### Usage
 
-To use, you'll need to include the Card.js and card.css files into your project. You can find them at `dist/` folder.
+To use, you'll need to include card-react
 
 ```html
 ReactCardFormContainer = require('card-react')
 ```
 
-Once you've included those files, you can initialize react-card. you'll need to make the component the container of your form:
+Once included, you can initialize card-react. you'll need to make the component the container of your form:
 
 ```jsx
 <ReactCardFormContainer
@@ -41,10 +46,15 @@ formInputsNames={
 }
 
 // initial values to render in the card element
-initialNumber='4242424242424242' // optional — default •••• •••• •••• ••••
-initialCvc='123' // optional — default •••
-initialExpiry='16/12' // optional — default ••/••
-initialName='Michael Jordan' // optional — default FULL NAME
+initialValues= {
+  {
+    number='4242424242424242' // optional — default •••• •••• •••• ••••
+    cvc='123' // optional — default •••
+    expiry='16/12' // optional — default ••/••
+    name='Random Name' // optional — default FULL NAME
+  }
+}
+
 
 // the class to add to the form input and the corresponding card element when the input is valid/invalid.
 classes={
@@ -67,13 +77,6 @@ formatting={true} // optional - default true
 
 </ReactCardFormContainer>
 ```
-
-### Installing card-react from npm
-
-If you're using npm, you can installreact-card with:
-
-`npm install card-react`
-
 
 ### To see the example run:
 

@@ -3,7 +3,7 @@ module.exports = (grunt) ->
 
   config =
     src: "src"
-    dist: "dist"
+    lib: "lib"
     tmp: ".tmp"
 
   @initConfig

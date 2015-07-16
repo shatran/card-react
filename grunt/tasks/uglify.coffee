@@ -10,5 +10,5 @@ module.exports = ->
       expand: true,
       cwd: '<%= config.tmp%>/'
       src: '**/*.js',
-      dest: '<%= config.dist%>/'
+      dest: '<%= config.lib%>/'
 

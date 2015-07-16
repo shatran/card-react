@@ -1,5 +1,5 @@
 React = require 'react'
-ReactCardFormContainer = require '../src/coffee/card.cjsx'
+ReactCardFormContainer = require '../src/coffee/card-react-form-container.cjsx'
 
 CardLoader = React.createClass
 
@@ -19,8 +19,11 @@ CardLoader = React.createClass
           name: 'CCname' # optional - defaults input[name = "name"]
         }
 
-        initialExpiry='16/12'
-        initialName='Michael Jordan'
+        initialValues= {
+          expiry: '16/12'
+          name:'Random Name'
+        }
+
         # the class to add to the form input and the corresponding card element when the input is valid or invalid.
         classes={
           valid: 'valid', # optional — default 'jp-card-valid'

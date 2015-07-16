@@ -1,6 +1,6 @@
 React = require 'react'
 Payment = require 'payment'
-ReactCard = require './card-component.cjsx'
+ReactCard = require './card-react-component'
 
 ReactCardFormContainer = React.createClass
 
@@ -16,6 +16,8 @@ ReactCardFormContainer = React.createClass
     classes:
       valid: 'jp-card-valid'
       invalid: 'jp-card-invalid'
+    initialValues: {}
+    fieldTypes: ["number", "cvc", "expiry", "name"]
 
   getInitialState: ->
     inputsValidationClass: {}
@@ -24,6 +26,10 @@ ReactCardFormContainer = React.createClass
     @inputsValues = {}
     @inputsRefs = {}
     @cardFlipped = false
+    # insert the initial card values
+    for type in @props.fieldTypes
+      @inputsValues[@props.formInputsNames[type]] = @props.initialValues[type]
+
 
   componentDidMount: ->
 
