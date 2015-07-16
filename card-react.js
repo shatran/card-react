@@ -1,1 +1,1 @@
-module.exports = require('./lib/card-react-component');
+module.exports = require('./lib/card-react-form-container');
