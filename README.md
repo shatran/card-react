@@ -6,7 +6,15 @@
 
 ![card](http://i.imgur.com/qG3TenO.gif)
 
-## Usage
+### Features
+
+  - Format form inputs
+  - Validate inputs
+  - Identifies card type
+  - Init the card element with any values
+  - The card element itself don't have to be a child of the form - it can be rendered anywhere
+
+### Usage
 
 To use, you'll need to include the Card.js and card.css files into your project. You can find them at `dist/` folder.
 
@@ -17,7 +25,6 @@ ReactCardFormContainer = require('card-react')
 Once you've included those files, you can initialize react-card. you'll need to make the component the container of your form:
 
 ```jsx
-
   <ReactCardFormContainer
 
     // the id of the container element where yo want to render the card component. this element can be anywhere in the DOM.
@@ -61,7 +68,7 @@ Once you've included those files, you can initialize react-card. you'll need to 
 
 If you're using npm, you can installreact-card with:
 
-  npm install card-react
+`npm install card-react`
 
 
 ### To see the example run:
