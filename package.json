@@ -1,6 +1,6 @@
 {
   "name": "card-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React component for card https://github.com/jessepollak/card",
   "main": "dist/card.js",
   "dependencies": {},
