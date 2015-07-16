@@ -3,11 +3,13 @@
   "version": "1.0.3",
   "description": "React component for card https://github.com/jessepollak/card",
   "main": "dist/card.js",
-  "dependencies": {},
+  "dependencies": {
+    "payment": "0.0.7",
+    "classnames": "^2.1.2"
+  },
   "devDependencies": {
     "bourbon": "^4.2.3",
     "browserify": "^10.2.4",
-    "classnames": "^2.1.2",
     "coffee-react": "^3.2.0",
     "coffee-reactify": "^3.0.0",
     "coffee-script": "^1.9.3",
@@ -21,7 +23,6 @@
     "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "^0.6.1",
-    "payment": "0.0.7",
     "react": "^0.13.3",
     "uglify-save-license": "^0.4.1"
   },

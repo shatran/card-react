@@ -21,7 +21,7 @@ CardLoader = React.createClass
 
         initialExpiry='16/12'
         initialName='Michael Jordan'
-        # the class to add to the form input and the corresponding card element when the input is valid/invalid.
+        # the class to add to the form input and the corresponding card element when the input is valid or invalid.
         classes={
           valid: 'valid', # optional — default 'jp-card-valid'
           invalid: 'invalid' # optional — default 'jp-card-invalid'

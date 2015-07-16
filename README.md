@@ -32,10 +32,12 @@ container="react-card-container" // required
 
 // an object contain the form inputs name. every input must have a name prop so that card-react and identify it.
 formInputsNames={
-  number: 'CCnumber', // optional — default input[name = "number"]
-  expiry: 'CCexpiry',// optional — default input[name = "expiry"]
-  cvc: 'CCcvc', // optional — default input[name = "cvc"]
-  name: 'CCname' // optional - defaults input[name = "name"]
+  {
+      number: 'CCnumber', // optional — default input[name = "number"]
+      expiry: 'CCexpiry',// optional — default input[name = "expiry"]
+      cvc: 'CCcvc', // optional — default input[name = "cvc"]
+      name: 'CCname' // optional - defaults input[name = "name"]
+  }
 }
 
 // initial values to render in the card element
@@ -46,8 +48,10 @@ initialName='Michael Jordan' // optional — default FULL NAME
 
 // the class to add to the form input and the corresponding card element when the input is valid/invalid.
 classes={
-  valid: 'valid-input', // optional — default 'jp-card-valid'
-  invalid: 'invalid-input' // optional — default 'jp-card-invalid'
+  {
+    valid: 'valid-input', // optional — default 'jp-card-valid'
+    invalid: 'invalid-input' // optional — default 'jp-card-invalid'
+  }
 }
 
 // specify whether you want to format the form inputs or not
