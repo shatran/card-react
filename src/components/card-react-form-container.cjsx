@@ -102,17 +102,18 @@ ReactCardFormContainer = React.createClass
           newClassName = inputsValidationClass
 
         return React.cloneElement(child, {
-          onChange: @inputOnChange
+          onKeyUp: @inputOnKeyUp
           onFocus: @inputOnFocus
           onBlur: @inputOnBlur
           ref: @inputsRefs[child.props.name]
+          defaultValue: @inputsValues[child.props.name]
           className: newClassName
         }, child.props && child.props.children)
       else
         return React.cloneElement(child, {}, this.traverseChildrenAndRegisterInputs(child.props && child.props.children))
     )
 
-  inputOnChange: (event)->
+  inputOnKeyUp: (event)->
     @inputsValues[event.target.name] = event.target.value
     @validateInput event.target.name, event.target.value
     @renderCardComponent()

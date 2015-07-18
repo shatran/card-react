@@ -6,5 +6,5 @@ module.exports = ->
       options:
         sassDir: '<%= config.src %>/scss'
         cssDir: '<%= config.lib %>/'
-        javascriptsDir: '<%= config.src %>/coffee'
+        javascriptsDir: '<%= config.src %>/components'
         importPath: 'node_modules/bourbon/app/assets/stylesheets'

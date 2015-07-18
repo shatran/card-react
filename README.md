@@ -98,5 +98,5 @@ Once included, you can initialize the component. you'll need to make the compone
   - Navigate to http://localhost:8000/
   - Run grunt build after you make the changes
 
-your more than welcome to contribute. Enjoy!
+You are more than welcome to contribute. Enjoy!
 
