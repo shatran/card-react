@@ -58,7 +58,6 @@ Once included, you can initialize the component. you'll need to make the compone
     }
   }
 
-
   // the class to add to the input and the corresponding card element when the input is valid/invalid.
   classes={
     {
@@ -78,11 +77,10 @@ Once included, you can initialize the component. you'll need to make the compone
     <input placeholder="CVC" type="text" name="CCcvc" />
   </form>
 
-  // the container in which the card component will be rendered
-  <div id="react-card-container"></div>
-
 </ReactCardFormContainer>
 
+// the container in which the card component will be rendered - can be anywhere in the DOM
+<div id="react-card-container"></div>
 
 ```
 
