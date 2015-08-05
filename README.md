@@ -1,9 +1,8 @@
 # card-react
 
-### A better credit card form now also as a react component
+### A better React credit card form
 
-[Card](http://github.com/jessepollak/card) makes credit card forms look and behave amazing. Its created with pure CSS, HTML, and Javascript — no images required.
-
+@jessepollak's [Card](http://github.com/jessepollak/card) makes credit card forms look and behave amazing. card-react brings the same experience to React.
 
 ![card](http://i.imgur.com/qG3TenO.gif)
 
