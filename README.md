@@ -2,7 +2,7 @@
 
 ### React credit card component
 
-@jessepollak's [Card](http://github.com/jessepollak/card) makes credit card forms look awesome.
+@jessepollak's [Card](http://github.com/jessepollak/card) make credit card forms look awesome.
 card-react is a React component that aims to do the same for React.
 
 ![card](http://i.imgur.com/qG3TenO.gif)
