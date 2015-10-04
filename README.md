@@ -1,17 +1,18 @@
 # card-react
 
-### A better React credit card form
+### React credit card component
 
-@jessepollak's [Card](http://github.com/jessepollak/card) makes credit card forms look and behave amazing. card-react brings the same experience to React.
+@jessepollak's [Card](http://github.com/jessepollak/card) makes credit card forms look awesome.
+card-react is a React component that aims to do the same for React.
 
 ![card](http://i.imgur.com/qG3TenO.gif)
 
 ### Features
 
-  - Format form inputs
   - Validate inputs
+  - Format form inputs
   - Identifies card type
-  - Init the card element with any values
+  - Initialize the card element with user details
   - The card element itself don't have to be a child of the form - it can be rendered anywhere
 
 ### How to install
@@ -21,7 +22,7 @@
 
 ### Usage
 
-To use, you'll need to include card-react
+Include card-react in your code:
 
 ```html
 ReactCardFormContainer = require('card-react')
@@ -32,12 +33,12 @@ Once included, you can initialize the component. you'll need to make the compone
 ```jsx
 <ReactCardFormContainer
 
-  // the id of the container element where yo want to render the card component.
-  // this element can be anywhere in the DOM.
+  // the id of the container element where you want to render the card component.
+  // the card component can be rendered anywhere (doesn't have to be in ReactCardFormContainer).
   container="react-card-container" // required
 
-  // an object contain the form inputs name.
-  // every input must have a name prop so that card-react and identify it.
+  // an object contain the form inputs names.
+  // every input must have a unique name prop.
   formInputsNames={
     {
       number: 'CCnumber', // optional — default input[name = "number"]
@@ -83,7 +84,7 @@ Once included, you can initialize the component. you'll need to make the compone
 
 ```
 
-### To see the example run:
+### To run the example:
 
   - npm install
   - grunt
