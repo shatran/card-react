@@ -11,7 +11,7 @@ card-react is a React component that aims to do the same for React.
 
   - Validate inputs
   - Format form inputs
-  - Identifies card type
+  - Identify card type
   - Initialize the card element with user details
   - The card element itself don't have to be a child of the form - it can be rendered anywhere
 
