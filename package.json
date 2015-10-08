@@ -4,7 +4,7 @@
   "description": "Add an interactive credit card animation to your payment form.",
   "main": "lib/card-react-form-container.js",
   "dependencies": {
-    "payment": "0.0.7",
+    "payment": "0.0.9",
     "classnames": "^2.1.2"
   },
   "devDependencies": {
