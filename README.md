@@ -33,18 +33,18 @@ Once included, you can initialize the component. you'll need to make the compone
 ```jsx
 <ReactCardFormContainer
 
-  // the id of the container element where you want to render the card component.
+  // the id of the container element where you want to render the card element.
   // the card component can be rendered anywhere (doesn't have to be in ReactCardFormContainer).
-  container="react-card-container" // required
+  container="card-wrapper" // required
 
   // an object contain the form inputs names.
   // every input must have a unique name prop.
   formInputsNames={
     {
-      number: 'CCnumber', // optional — default input[name = "number"]
-      expiry: 'CCexpiry',// optional — default input[name = "expiry"]
-      cvc: 'CCcvc', // optional — default input[name = "cvc"]
-      name: 'CCname' // optional - defaults input[name = "name"]
+      number: 'CCnumber', // optional — default "number"
+      expiry: 'CCexpiry',// optional — default "expiry"
+      cvc: 'CCcvc', // optional — default "cvc"
+      name: 'CCname' // optional - default "name"
     }
   }
 
@@ -58,7 +58,8 @@ Once included, you can initialize the component. you'll need to make the compone
     }
   }
 
-  // the class to add to the input and the corresponding card element when the input is valid/invalid.
+  // the class name attribute to add to the input field and the corresponding part of the card element,
+  // when the input is valid/invalid.
   classes={
     {
       valid: 'valid-input', // optional — default 'jp-card-valid'
@@ -80,7 +81,7 @@ Once included, you can initialize the component. you'll need to make the compone
 </ReactCardFormContainer>
 
 // the container in which the card component will be rendered - can be anywhere in the DOM
-<div id="react-card-container"></div>
+<div id="card-wrapper"></div>
 
 ```
 
