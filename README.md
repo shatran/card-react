@@ -25,7 +25,7 @@ card-react is a React component that aims to do the same for React.
 Include card-react in your code:
 
 ```html
-ReactCardFormContainer = require('card-react')
+import ReactCardFormContainer from 'card-react';
 ```
 
 Once included, you can initialize the component. you'll need to make the component the container of your form:
@@ -51,10 +51,10 @@ Once included, you can initialize the component. you'll need to make the compone
   // initial values to render in the card element
   initialValues= {
     {
-      number='4242424242424242' // optional — default •••• •••• •••• ••••
-      cvc='123' // optional — default •••
-      expiry='16/12' // optional — default ••/••
-      name='Random Name' // optional — default FULL NAME
+      number: '4242424242424242', // optional — default •••• •••• •••• ••••
+      cvc: '123', // optional — default •••
+      expiry: '16/12', // optional — default ••/••
+      name: 'Random Name' // optional — default FULL NAME
     }
   }
 
