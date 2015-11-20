@@ -1,5 +1,5 @@
 React = require 'react'
-Payment = require 'payment/src/payment'
+Payment = require 'payment'
 ClassNames = require 'classnames'
 
 ReactCard = React.createClass
