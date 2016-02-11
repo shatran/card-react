@@ -1,4 +1,5 @@
 React = require 'react'
+ReactDOM = require 'react-dom'
 Payment = require 'payment'
 ReactCard = require './card-react-component'
 
@@ -54,9 +55,9 @@ ReactCardFormContainer = React.createClass
   # format the text inside the number, cvc and expiry inputs
   formatInputs: ->
     inputsNames = @props.formInputsNames
-    Payment.formatCardNumber React.findDOMNode(@refs[@inputsRefs[inputsNames["number"]]])
-    Payment.formatCardCVC React.findDOMNode(@refs[@inputsRefs[inputsNames["cvc"]]])
-    Payment.formatCardExpiry React.findDOMNode(@refs[@inputsRefs[inputsNames["expiry"]]])
+    Payment.formatCardNumber ReactDOM.findDOMNode(@refs[@inputsRefs[inputsNames["number"]]])
+    Payment.formatCardCVC ReactDOM.findDOMNode(@refs[@inputsRefs[inputsNames["cvc"]]])
+    Payment.formatCardExpiry ReactDOM.findDOMNode(@refs[@inputsRefs[inputsNames["expiry"]]])
 
   # Render the card component into the DOM in the supplied this.cardContainer
   # according to React docs: "If the ReactElement was previously rendered into container,
