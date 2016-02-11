@@ -1,4 +1,5 @@
 React = require 'react'
+ReactDOM = require 'react-dom'
 ReactCardFormContainer = require '../lib/card-react-form-container.js'
 
 CardLoader = React.createClass
@@ -42,4 +43,4 @@ CardLoader = React.createClass
     </div>
 
 
-React.render <CardLoader />, document.getElementById 'demo-container'
+ReactDOM.render <CardLoader />, document.getElementById 'demo-container'
