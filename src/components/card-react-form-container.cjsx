@@ -64,7 +64,7 @@ ReactCardFormContainer = React.createClass
   # this will perform an update on it and only mutate the DOM as necessary to reflect the latest React component."
   renderCardComponent: ->
     if @cardContainer
-      React.render <ReactCard
+      ReactDOM.render <ReactCard
                     {...@props}
                     cardFlipped={@cardFlipped}
                     focusedInput={@focusedInput}
