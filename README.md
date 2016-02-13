@@ -7,6 +7,8 @@ card-react is a React component that aims to do the same for React.
 
 ![card](http://i.imgur.com/qG3TenO.gif)
 
+### From version 1.1.20 card-react supports React 0.14.7 and up
+
 ### Features
 
   - Validate inputs
@@ -92,8 +94,8 @@ Once included, you can initialize the component. you'll need to make the compone
 
 #### Development
 
-  - Run npm install
-  - Run grunt
+  - npm install
+  - grunt dev
   - Navigate to http://localhost:8000/
   - Run grunt build after you make the changes
 

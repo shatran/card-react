@@ -2,6 +2,11 @@ React = require 'react'
 Payment = require 'payment'
 ClassNames = require 'classnames'
 
+dot = String.fromCharCode('8226')
+ccDots = dot + dot + dot + dot
+cvcDots = dot + dot + dot
+expiryDots = dot + dot + '/' + dot + dot
+
 ReactCard = React.createClass
 
   displayName: "ReactCard"
@@ -12,9 +17,9 @@ ReactCard = React.createClass
       monthYear: 'month/year'
     baseWidth: 350
     defaultValues:
-      number: '•••• •••• •••• ••••'
-      cvc: '•••'
-      expiry: '••/••'
+      number: ccDots + " " + ccDots + " " + ccDots + " " + ccDots
+      cvc: cvcDots
+      expiry: expiryDots
       name: 'Full Name'
 
   componentWillMount: ->

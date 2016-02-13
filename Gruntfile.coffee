@@ -19,7 +19,7 @@ module.exports = (grunt) ->
     "clean:build"
   ]
 
-  @registerTask "default", [
+  @registerTask "dev", [
     "clean"
     "cjsx"
     "browserify:dev"
