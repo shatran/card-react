@@ -14,7 +14,7 @@ module.exports = (grunt) ->
   @registerTask "build", [
     "clean"
     "cjsx"
-    "compass"
+    "sass"
     "cssmin"
     "clean:build"
   ]
@@ -23,7 +23,7 @@ module.exports = (grunt) ->
     "clean"
     "cjsx"
     "browserify:dev"
-    "compass"
+    "sass"
     "connect"
     "watch"
   ]

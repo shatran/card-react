@@ -7,9 +7,9 @@ ccDots = dot + dot + dot + dot
 cvcDots = dot + dot + dot
 expiryDots = dot + dot + '/' + dot + dot
 
-ReactCard = React.createClass
+CardReact = React.createClass
 
-  displayName: "ReactCard"
+  displayName: "CardReact"
 
   getDefaultProps: ->
     messages:
@@ -118,4 +118,4 @@ ReactCard = React.createClass
       </div>
     )
 
-module.exports = ReactCard
+module.exports = CardReact
