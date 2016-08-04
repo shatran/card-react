@@ -3,9 +3,9 @@ ReactDOM = require 'react-dom'
 Payment = require 'payment'
 ReactCard = require './card-react-component'
 
-ReactCardFormContainer = React.createClass
+CardReactFormContainer = React.createClass
 
-  displayName: 'ReactCardContainer'
+  displayName: 'CardReactFormContainer'
 
   getDefaultProps: ->
     formatting: true
@@ -159,4 +159,4 @@ ReactCardFormContainer = React.createClass
       </div>
     )
 
-module.exports = ReactCardFormContainer
+module.exports = CardReactFormContainer

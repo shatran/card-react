@@ -27,13 +27,13 @@ card-react is a React component that aims to do the same for React.
 Include card-react in your code:
 
 ```html
-import ReactCardFormContainer from 'card-react';
+import CardReactFormContainer from 'card-react';
 ```
 
 Once included, you can initialize the component. you'll need to make the component the container of your form:
 
 ```jsx
-<ReactCardFormContainer
+<CardReactFormContainer
 
   // the id of the container element where you want to render the card element.
   // the card component can be rendered anywhere (doesn't have to be in ReactCardFormContainer).
@@ -80,7 +80,7 @@ Once included, you can initialize the component. you'll need to make the compone
     <input placeholder="CVC" type="text" name="CCcvc" />
   </form>
 
-</ReactCardFormContainer>
+</CardReactFormContainer>
 
 // the container in which the card component will be rendered - can be anywhere in the DOM
 <div id="card-wrapper"></div>
@@ -90,14 +90,18 @@ Once included, you can initialize the component. you'll need to make the compone
 ### To run the example:
 
   - npm install
-  - grunt
+  - npm start
 
 #### Development
 
-  - npm install
-  - grunt dev
-  - Navigate to http://localhost:8000/
-  - Run grunt build after you make the changes
+  - npm start
+  - Open http://localhost:8000/
+  - npm run build after you make the changes
+
+#### Future Plans
+
+  - move to webpack
+  - add tests
 
 You are more than welcome to contribute. Enjoy!
 

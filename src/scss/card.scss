@@ -1,5 +1,4 @@
 @import "../../node_modules/bourbon/app/assets/stylesheets/bourbon";
-@import "compass/css3";
 @import "mixins";
 
 // browser specific hacks
@@ -83,7 +82,7 @@
             @include transition(opacity $card-transition-time linear);
             &.jp-card-focused {
                 opacity: 1;
-                font-weight: 700;
+                font-weight: 500;
                 &.valid {}
             }
         }
