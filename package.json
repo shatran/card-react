@@ -1,6 +1,6 @@
 {
   "name": "card-react",
-  "version": "1.1.20",
+  "version": "1.2.0",
   "description": "Add an interactive credit card animation to your payment form.",
   "main": "lib/card-react-form-container.js",
   "dependencies": {
