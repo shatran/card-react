@@ -46,6 +46,10 @@
         @include transform(rotateY(180deg));
     }
 
+    .jp-card-front {
+        z-index: 2;
+    }
+
     .jp-card-front, .jp-card-back {
         @include backface-visibility(hidden);
         @include transform-style(preserve-3d);
