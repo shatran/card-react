@@ -71,6 +71,9 @@ Once included, you can initialize the component. you'll need to make the compone
 
   // specify whether you want to format the form inputs or not
   formatting={true} // optional - default true
+
+  //specifies if you want to validate on field blur or keyup
+  validationType="blur" // optional - default keyUp
 >
 
   <form>
@@ -104,4 +107,3 @@ Once included, you can initialize the component. you'll need to make the compone
   - add tests
 
 You are more than welcome to contribute. Enjoy!
-

@@ -19,6 +19,7 @@ CardReactFormContainer = React.createClass
       invalid: 'jp-card-invalid'
     initialValues: {}
     fieldTypes: ["number", "cvc", "expiry", "name"]
+    validationType: "keyUp"
 
   getInitialState: ->
     inputsValidationClass: {}
@@ -116,7 +117,8 @@ CardReactFormContainer = React.createClass
 
   inputOnKeyUp: (event)->
     @inputsValues[event.target.name] = event.target.value
-    @validateInput event.target.name, event.target.value
+    if @props.validationType == 'keyUp'
+      @validateInput event.target.name, event.target.value
     @renderCardComponent()
 
   inputOnFocus: (event)->
@@ -128,6 +130,8 @@ CardReactFormContainer = React.createClass
 
   inputOnBlur: (event)->
     @focusedInput = ''
+    if @props.validationType == 'blur'
+      @validateInput event.target.name, event.target.value
     @cardFlipped = false
     @renderCardComponent()
 
