@@ -29,8 +29,8 @@
     "uglify-save-license": "^0.4.1"
   },
   "peerDependencies": {
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1"
+    "react": ">=0.14.0",
+    "react-dom": ">=0.14.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
