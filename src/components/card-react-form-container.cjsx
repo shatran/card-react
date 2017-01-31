@@ -14,6 +14,7 @@ CardReactFormContainer = React.createClass
       expiry: 'expiry'
       cvc: 'cvc'
       name: 'name'
+    inputAttributeIndentifier: "id"
     classes:
       valid: 'jp-card-valid'
       invalid: 'jp-card-invalid'
@@ -85,16 +86,18 @@ CardReactFormContainer = React.createClass
       if typeof child isnt 'object' or child is null
         return child
 
-      if (child.props and child.props.name)
+      inputAttribute = child.props[@props.inputAttributeIndentifier]
+
+      if (child.props and child.props.id)
 
         newClassName = child.props.className
-        inputsValidationClass = @state.inputsValidationClass[child.props.name]
+        inputsValidationClass = @state.inputsValidationClass[inputAttribute]
 
         # assign a new ref if one does not exists
         if child.ref
-          @inputsRefs[child.props.name] = child.ref
+          @inputsRefs[inputAttribute] = child.ref
         else
-          @inputsRefs[child.props.name] = "react-card-input-#{child.props.name}"
+          @inputsRefs[inputAttribute] = "react-card-input-#{inputAttribute}"
 
         # add validation className if needed
         if newClassName and inputsValidationClass
@@ -106,8 +109,8 @@ CardReactFormContainer = React.createClass
           onKeyUp: @inputOnKeyUp
           onFocus: @inputOnFocus
           onBlur: @inputOnBlur
-          ref: @inputsRefs[child.props.name]
-          defaultValue: @inputsValues[child.props.name]
+          ref: @inputsRefs[inputAttribute]
+          defaultValue: @inputsValues[inputAttribute]
           className: newClassName
         }, child.props && child.props.children)
       else
@@ -115,12 +118,13 @@ CardReactFormContainer = React.createClass
     )
 
   inputOnKeyUp: (event)->
-    @inputsValues[event.target.name] = event.target.value
-    @validateInput event.target.name, event.target.value
+    @input = event.target[@props.inputAttributeIndentifier]
+    @inputsValues[@input] = event.target.value
+    @validateInput @input, event.target.value
     @renderCardComponent()
 
   inputOnFocus: (event)->
-    @focusedInput = event.target.name
+    @focusedInput = event.target[@props.inputAttributeIndentifier]
     # flip card if focused input is 'cvc' field
     if @focusedInput is @props.formInputsNames['cvc']
       @cardFlipped = true
