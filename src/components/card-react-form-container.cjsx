@@ -88,7 +88,7 @@ CardReactFormContainer = React.createClass
 
       inputAttribute = child.props[@props.inputAttributeIndentifier]
 
-      if (child.props and child.props.id)
+      if (child.props and inputAttribute)
 
         newClassName = child.props.className
         inputsValidationClass = @state.inputsValidationClass[inputAttribute]
