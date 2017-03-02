@@ -5,7 +5,7 @@
   "main": "lib/card-react-form-container.js",
   "dependencies": {
     "classnames": "^2.1.2",
-    "payment": "2.1.4"
+    "payment": "~2.2.1"
   },
   "devDependencies": {
     "bourbon": "^4.2.7",
