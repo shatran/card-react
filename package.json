@@ -5,6 +5,7 @@
   "main": "lib/card-react-form-container.js",
   "dependencies": {
     "classnames": "^2.1.2",
+    "create-react-class": "^15.5.3",
     "payment": "~2.2.1"
   },
   "devDependencies": {

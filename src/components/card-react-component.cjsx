@@ -1,4 +1,5 @@
 React = require 'react'
+createReactClass = require 'create-react-class'
 Payment = require 'payment'
 ClassNames = require 'classnames'
 
@@ -7,7 +8,7 @@ ccDots = dot + dot + dot + dot
 cvcDots = dot + dot + dot
 expiryDots = dot + dot + '/' + dot + dot
 
-CardReact = React.createClass
+CardReact = createReactClass
 
   displayName: "CardReact"
 

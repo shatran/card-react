@@ -1,9 +1,10 @@
 React = require 'react'
+createReactClass = require 'create-react-class'
 ReactDOM = require 'react-dom'
 Payment = require 'payment'
 ReactCard = require './card-react-component'
 
-CardReactFormContainer = React.createClass
+CardReactFormContainer = createReactClass
 
   displayName: 'CardReactFormContainer'
 
