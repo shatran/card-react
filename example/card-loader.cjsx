@@ -1,6 +1,6 @@
 React = require 'react'
 ReactDOM = require 'react-dom'
-ReactCardFormContainer = require '../lib/card-react-form-container.js'
+CardReactFormContainer = require '../lib/card-react-form-container.js'
 
 CardLoader = React.createClass
 
@@ -9,9 +9,11 @@ CardLoader = React.createClass
   render: ->
 
     <div>
-      <ReactCardFormContainer
+      <CardReactFormContainer
 
         container="react-card-container"
+
+        inputAttributeIndentifier="id"
 
         formInputsNames={
           number: 'CCnumber', # optional — default input[name = "number"]
@@ -33,12 +35,12 @@ CardLoader = React.createClass
 
       >
           <form>
-            <input placeholder="Full name" type="text" name="CCname" />
-            <input placeholder="Card number" type="text" name="CCnumber" />
-            <input placeholder="MM/YY" type="text" name="CCexpiry" />
-            <input placeholder="CVC" type="text" name="CCcvc" />
+            <input placeholder="Full name" type="text" id="CCname" />
+            <input placeholder="Card number" type="text" id="CCnumber" />
+            <input placeholder="MM/YY" type="text" id="CCexpiry" />
+            <input placeholder="CVC" type="text" id="CCcvc" />
           </form>
-      </ReactCardFormContainer>
+      </CardReactFormContainer>
       <div id="react-card-container"></div>
     </div>
 
