@@ -47,6 +47,7 @@ Once included, you can initialize the component. you'll need to make the compone
       expiry: 'CCexpiry',// optional — default "expiry"
       cvc: 'CCcvc', // optional — default "cvc"
       name: 'CCname' // optional - default "name"
+      submit: 'Submit'
     }
   }
 
@@ -78,6 +79,7 @@ Once included, you can initialize the component. you'll need to make the compone
     <input placeholder="Card number" type="text" name="CCnumber" />
     <input placeholder="MM/YY" type="text" name="CCexpiry" />
     <input placeholder="CVC" type="text" name="CCcvc" />
+    <input type="submit" name="Submit" value="Submit" />
   </form>
 
 </CardReactFormContainer>
