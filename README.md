@@ -46,7 +46,8 @@ Once included, you can initialize the component. you'll need to make the compone
       number: 'CCnumber', // optional — default "number"
       expiry: 'CCexpiry',// optional — default "expiry"
       cvc: 'CCcvc', // optional — default "cvc"
-      name: 'CCname' // optional - default "name"
+      name: 'CCname', // optional - default "name"
+      typeCard: 'CCtypeCard' // optional - defaults input[name = "typeCard"]
     }
   }
 
@@ -64,20 +65,39 @@ Once included, you can initialize the component. you'll need to make the compone
   // when the input is valid/invalid.
   classes={
     {
-      valid: 'valid-input', // optional — default 'jp-card-valid'
-      invalid: 'invalid-input' // optional — default 'jp-card-invalid'
+      valid: 'has-success', // optional — default 'jp-card-valid'
+      invalid: 'has-error' // optional — default 'jp-card-invalid'
     }
   }
+
+  bootstrapValidator={true} 
 
   // specify whether you want to format the form inputs or not
   formatting={true} // optional - default true
 >
 
   <form>
-    <input placeholder="Full name" type="text" name="CCname" />
-    <input placeholder="Card number" type="text" name="CCnumber" />
-    <input placeholder="MM/YY" type="text" name="CCexpiry" />
-    <input placeholder="CVC" type="text" name="CCcvc" />
+
+    <div className="form-group">
+        <label htmlFor="inputCCnumber">Card number</label>
+        <input className="form-control" id="inputCCnumber" type="text" placeholder="0000 0000 0000 0000" name="CCnumber" />
+    </div>
+
+    <div className="form-group">
+        <label htmlFor="inputCCname">Full name</label>
+        <input className="form-control" id="inputCCname" type="text" placeholder="Full name" name="CCname" />
+    </div>
+
+    <div className="form-group">
+        <label htmlFor="inputCCcvc">CVC</label>
+        <input className="form-control" id="inputCCcvc" type="text" placeholder="0000" name="CCcvc" />
+    </div>
+
+    <div className="form-group">
+        <label htmlFor="inputCCexpiry">Expiry</label>
+        <input className="form-control" id="inputCCexpiry" type="text" placeholder="MM/YY" name="CCexpiry" />
+    </div>
+    
   </form>
 
 </CardReactFormContainer>

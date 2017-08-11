@@ -14,12 +14,13 @@ CardReactFormContainer = createReactClass
       number: 'number'
       expiry: 'expiry'
       cvc: 'cvc'
-      name: 'name'
+      name: 'name',
+      typeCard: 'typeCard'
     classes:
       valid: 'jp-card-valid'
       invalid: 'jp-card-invalid'
     initialValues: {}
-    fieldTypes: ["number", "cvc", "expiry", "name"]
+    fieldTypes: ["number", "cvc", "expiry", "name", "typeCard"]
 
   getInitialState: ->
     inputsValidationClass: {}
@@ -116,6 +117,9 @@ CardReactFormContainer = createReactClass
     )
 
   inputOnKeyUp: (event)->
+    if @focusedInput is @props.formInputsNames['number']
+        @inputsValues[@props.formInputsNames['typeCard']] = Payment.fns.cardType event.target.value or ''
+    
     @inputsValues[event.target.name] = event.target.value
     @validateInput event.target.name, event.target.value
     @renderCardComponent()

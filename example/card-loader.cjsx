@@ -17,7 +17,8 @@ CardLoader = React.createClass
           number: 'CCnumber', # optional — default input[name = "number"]
           expiry: 'CCexpiry', # optional — default input[name = "expiry"]
           cvc: 'CCcvc', # optional — default input[name = "cvc"]
-          name: 'CCname' # optional - defaults input[name = "name"]
+          name: 'CCname', # optional - defaults input[name = "name"]
+          typeCard: 'CCtypeCard' # optional - defaults input[name = "typeCard"]
         }
 
         initialValues= {
@@ -37,6 +38,7 @@ CardLoader = React.createClass
             <input placeholder="Card number" type="text" name="CCnumber" />
             <input placeholder="MM/YY" type="text" name="CCexpiry" />
             <input placeholder="CVC" type="text" name="CCcvc" />
+            <input type="hidden" name="CCtypeCard" />
           </form>
       </ReactCardFormContainer>
       <div id="react-card-container"></div>
